@@ -40,3 +40,25 @@ public class Solution {
         for (int i = 0; i < n; i++) System.out.print(a[i]+" ");
     }
 }
+
+
+
+Maximum Element 
+
+
+import java.util.*;
+
+public class Main {
+
+    public static void main(String[] args) {
+	   
+        Scanner scan = new Scanner(System.in);
+        int n = scan.nextInt(),a[]=new int[n];
+        for (int i = 0; i < n; i++)  a[i]=scan.nextInt();
+        scan.close();
+        int c,d,e=a[0];
+        for(c=0;c<n-1;c++) for(d=c+1;d<n;d++) if(a[d]>e) e=a[d];
+        System.out.print(e);
+        
+    }
+}
