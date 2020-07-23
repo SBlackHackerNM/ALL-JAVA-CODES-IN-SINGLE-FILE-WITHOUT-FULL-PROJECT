@@ -2,21 +2,20 @@ import java.util.*;
 
 public class BubbleSort {
 
-    public static void main(String[] args) {
+public static void main(String[] args) {
 	   
-        Scanner scan = new Scanner(System.in);
-        int n = scan.nextInt(),a[]=new int[n];
-        for (int i = 0; i < n; i++)  a[i]=scan.nextInt();
-        scan.close();
-        int c,d;
-        System.out.println("Bubble sort gives:");
-        for(c=0;c<n-1;c++) for(d=0;d<n-c-1;d++) if(a[d]>a[d+1])
-        {
-        a[d]=a[d]+a[d+1];
-        a[d+1]=a[d]-a[d+1];
-        a[d]=a[d]-a[d+1];
-        }
-        for (int i = 0; i < a.length; i++) System.out.print(a[i]);
-        
-    }
+Scanner a = new Scanner(System.in);
+int b = a.nextInt(),c[]=new int[b];
+for (int d = 0; d < b; d++)  c[d]=a.nextInt();
+a.close();
+int e,f;
+System.out.println("Bubble sort gives:");
+for(e=0;e<b-1;e++) for(f=0;f<b-e-1;f++) if(c[f]>c[f+1])
+{
+c[f]=c[f]+c[f+1];
+c[f+1]=c[f]-c[f+1];
+c[f]=c[f]-c[f+1];
+}
+for (int g = 0; g < c.length; g++) System.out.print(c[g]);
+}
 }
